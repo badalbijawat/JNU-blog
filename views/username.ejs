@@ -1,0 +1,53 @@
+<%- include('partials/header'); -%>
+
+    <div class="container">
+      <h1 class = "hello">Hello, Badal</h1>
+      <h2><a class="btn btn-danger btn-lg" href="compose" role="button">Create a new article</a></h2>
+    </div>
+    <div class = "container">
+    <%  if(posts.length!=0){%>
+      <h1 class = "yourarticle"> Your Articles</h1>
+    <%for(var i =0; i<posts.length; i++){%>
+         <h3 class= "title"><%=posts[i].title%></h3>
+         <p class = "content"><%=posts[i].content%>...<a href = "" >Read more</a></p>
+     <%};%>
+<%}%>
+
+<style>
+body
+{
+  background-image: url("aaron-burden-AXqMy8MSSdk-unsplash.jpg");
+  background-size:cover;
+  background-position:center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display:inline-block;
+  background-repeat:no-repeat;
+
+  background-blend-mode: darken !important;
+
+
+  height: 100vh;
+  width: 100vw;
+}
+.hello{
+  font-size: 2.5rem;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  color: white;
+}
+.yourarticle{
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  color: white;
+  text-align: left;
+}
+.title{
+  color: white;
+}
+.content
+{
+  color: white;
+}
+</style>
+<%- include('partials/footer'); -%>

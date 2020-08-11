@@ -1,0 +1,39 @@
+<%- include('partials/header'); -%>
+
+
+      <h1 class="success">Success</h1>
+      <p style = "color:white; font-size: 1.5rem; text-align: center; padding-top: 20px; padding-bottom: 60px">You have successfully posted your blog.</p>
+      <div class = "developedby">
+        <div class = "db">
+          <div class="dba">
+            <a href = "username" class = "btn btn-danger">Your Profile</a>
+          </div>
+          <div class="dbb">
+<a href = "compose" class = "btn btn-danger">Write another article</a>
+          </div>
+        </div>
+      </div>
+
+    <style>
+    body
+    {
+      background-image: url("aaron-burden-AXqMy8MSSdk-unsplash.jpg");
+      background-size:cover;
+      background-position:center;
+      background-color: rgba(0, 0, 0, 0.5);
+      display:inline-block;
+      background-repeat:no-repeat;
+
+      background-blend-mode: darken !important;
+
+      height: 100vh;
+      width: 100vw;
+    }
+    .success
+    {
+      color: white;
+      padding-top: 50px;
+    }
+
+    </style>
+    <%- include('partials/footer'); -%>

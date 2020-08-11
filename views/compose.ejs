@@ -1,0 +1,41 @@
+<%- include('partials/header'); -%>
+
+
+<h1 class = "compose">Compose</h1>
+<form action="/compose" method="post">
+<div class="form-group">
+  <label class = "title">Title</label>
+  <input class = "form-control" type="text" name="postTitle">
+  <label class = "blog">Blog</label>
+  <textarea class = "form-control" name="postBody" rows="10" cols="30"></textarea>
+</div>
+<button class = "btn btn-primary" type="submit" name="button">POST</button>
+
+</form>
+<style>
+body
+{
+  background-image: url("aaron-burden-y02jEX_B0O0-unsplash.jpg");
+  background-size:cover;
+  background-position:center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display:inline-block;
+
+  height: 100vh;
+  background-blend-mode: darken !important;
+  width: 100vw;
+}
+.blog{
+  font-size: 2.5rem;
+  color: #eeeeee;
+}
+.title{
+  font-size: 2.5rem;
+  color: #eeeeee;
+}
+.compose{
+  color: #eeeeee;
+
+}
+</style>
+<%- include('partials/footer'); -%>
